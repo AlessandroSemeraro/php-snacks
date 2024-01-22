@@ -1,0 +1,2 @@
+SELECT * FROM `students` WHERE `surname` LIKE '%0'; 
+SELECT AVG(`vote`) FROM `exam_student` GROUP BY `exam_id` HAVING AVG (`vote`) > 28; 
