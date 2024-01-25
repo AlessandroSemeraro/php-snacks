@@ -11,7 +11,23 @@ class Pokemon {
     public $weight;
     public $color;
 
-    public function 
+    public function setWeight($weight){
+        if($weight > 50) {
+            $this -> weight = 99;
+        }
+    }
+
+    public function setHeight($height){
+        if($height > 120) {
+            $this -> height = 121;
+        }
+    }
+
+    public function badColor($color){
+        if($color != "red") {
+            $this -> color = "black";
+        }
+    }
 
     function __construct($_evolution) {
         $this->evolution = $_evolution;
