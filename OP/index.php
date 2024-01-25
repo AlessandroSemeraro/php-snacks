@@ -8,37 +8,37 @@ class Pokemon {
     public $age;
     public $evolution;
     public $height;
-    public $weight;
-    public $color;
+    public $attack = 0;
+    public $defense = 0;
 
-    public function setWeight($weight){
-        if($weight > 50) {
-            $this -> weight = 99;
+    public function setAttack ($_attack){
+        if($_attack > 50) {
+            $this -> attack = 99;
         }
     }
 
-    public function setHeight($height){
-        if($height > 120) {
-            $this -> height = 121;
+    public function getAttack (){
+       return $this -> attack;
+    }
+
+    public function setDefense($_defense){
+        if($_defense > 50) {
+            $this -> defense = 90;
         }
     }
 
-    public function badColor($color){
-        if($color != "red") {
-            $this -> color = "black";
-        }
+    public function getDefense(){
+        return $this -> defense;
     }
 
-    function __construct($_evolution) {
-        $this->evolution = $_evolution;
-        }
+    
 }
 
 
+$pikachu = new Pokemon ();
+$pikachu-> setAttack(51);
+$pikachu-> setDefense(51);
 
-
-
-
-
-
+echo $pikachu-> setAttack(51);
+echo $pikachu-> setDefense(51);
 ?>
