@@ -39,6 +39,6 @@ $pikachu = new Pokemon ();
 $pikachu-> setAttack(51);
 $pikachu-> setDefense(51);
 
-echo $pikachu-> setAttack(51);
-echo $pikachu-> setDefense(51);
+echo $pikachu-> getAttack();
+echo $pikachu-> getDefense();
 ?>
