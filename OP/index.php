@@ -36,6 +36,7 @@ class Pokemon {
 
 
 $pikachu = new Pokemon ();
+
 $pikachu-> setAttack(51);
 $pikachu-> setDefense(51);
 
